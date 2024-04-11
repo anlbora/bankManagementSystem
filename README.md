@@ -1,2 +1,2 @@
-# bankManagementSystem
-The program is a banking management system for customers, handling account operations, deposits, withdrawals, and credit card activities like spending and repayment. It automates these processes to offer a seamless banking experience, helping users manage finances efficiently.
+# BANK MANAGEMENT SYSTEM
+The program serves as a comprehensive banking management system, allowing customers to manage their accounts, credit cards, and loans efficiently through a user-friendly interface. Each method corresponds to a specific banking operation, providing functionalities from account creation to money transfers and credit management.
