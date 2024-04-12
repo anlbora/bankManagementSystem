@@ -26,12 +26,14 @@ The main window provides a user-friendly interface to the banking management sys
 
 ### Account Management
 
-- `CreateBankAccount(self):` Creates a new bank account for the logged-in customer with the provided details.
-- **Add Users**: Enables the addition of new user accounts.
-- **Update Users**: Allows modification of existing user information.
-- **Delete Users**: Facilitates the removal of user accounts after authentication.
+- `CreateBankAccount(self)` Creates a new bank account for the logged-in customer with the provided details.
+- `getAccountID(self)` Retrieves the account ID associated with the logged-in customer.
+- `getAccountName(self, account_id)` Retrieves the account name based on the provided account ID.
+- `deleteBankAccount(self)` Deletes a bank account based on the provided account name.
+- `updateBankAccount(self)` Updates the details of a bank account based on the provided account name.
+- `getAccountList(self)` Retrieves and populates the list of accounts associated with the logged-in customer.
 
-### Director Management
+### Credit Card Operations:
 
 - **View All Directors**: Presents a list of all registered directors.
 - **Add Directors**: Allows the addition of new director profiles.
