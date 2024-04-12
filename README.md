@@ -19,8 +19,6 @@
 
 The Bank Management System is a comprehensive banking management application designed to help customers manage their accounts, credit cards, and loans efficiently. It offers a user-friendly interface for performing various banking operations, from account creation to money transfers and credit management.
 
-![4](https://github.com/anlbora/bankManagementSystem/assets/100442507/a7b7a07c-2f0e-4be3-9f84-a93599dac41f)
-
 ## Features
 
 ### Login Page
@@ -30,8 +28,10 @@ The Login Page serves as the entry point to the banking management system, provi
 - **Log In**: Authenticate and access your account.
 - **Sign Up**: Create a new account.
 - **Reset Password**: Reset your password if forgotten.
-
-
+  
+![1](https://github.com/anlbora/bankManagementSystem/assets/100442507/05cbf667-7e36-4aa9-8008-8bad0dcd5298)
+![2](https://github.com/anlbora/bankManagementSystem/assets/100442507/07fe2271-1b32-4337-b67a-d1a859e17905)
+![3](https://github.com/anlbora/bankManagementSystem/assets/100442507/2455c6e8-9268-4eab-a385-ef99756d514c)
 
 ### Main Window
 
@@ -42,7 +42,7 @@ The Main Window offers a user-friendly interface to perform various banking oper
 - **Credit Card Operations**: Manage credit cards and spending.
 - **Loan Management**: Take new loans and manage repayments.
 
-![Main Window](https://github.com/anlbora/bankManagementSystem/assets/100442507/a7b7a07c-2f0e-4be3-9f84-a93599dac41f)
+![4](https://github.com/anlbora/bankManagementSystem/assets/100442507/a7b7a07c-2f0e-4be3-9f84-a93599dac41f)
 
 ### Account Management
 
