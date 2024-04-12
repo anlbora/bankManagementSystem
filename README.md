@@ -7,22 +7,14 @@ The program serves as a comprehensive banking management system, allowing custom
 ## Features
 
 ### Login Page
+
+  The login page serves as the entry point to the banking management system. It provides a secure mechanism for users to authenticate themselves before accessing their accounts, credit cards, loans, and other banking functionalities. The login method is responsible for validating user credentials, ensuring that only authorized users can access the system.
 - Log In
 - Sign Up
 - Reset Password
-- ![11](https://github.com/anlbora/movieLibrary/assets/100442507/b08e8b91-888f-4d84-93bc-a4040c316d2d)
-
-  The login page serves as the entry point to the banking management system. It provides a secure mechanism for users to authenticate themselves before accessing their accounts, credit cards, loans, and other banking functionalities. The login method is responsible for validating user credentials, ensuring that only authorized users can access the system.
-
-  ![12](https://github.com/anlbora/movieLibrary/assets/100442507/f43b8665-89c9-45d0-aa54-c6d041f23b04)
-
-  ![13](https://github.com/anlbora/movieLibrary/assets/100442507/adb60437-a757-4b5c-a434-edb8e2e265a3)
-
 
 ### Main Window
-The main window provides a user-friendly interface to the banking management system, allowing customers to perform various banking operations conveniently. It integrates **account management, credit card functionalities, and loan management, enabling customers to manage their finances, accounts, and debts** effectively. The utility methods ensure consistent error handling and messaging throughout the application, enhancing user experience and system reliability. 
-
-![16](https://github.com/anlbora/movieLibrary/assets/100442507/3fcc1645-44ad-466b-bd76-0b37d5581c8f)
+  The main window provides a user-friendly interface to the banking management system, allowing customers to perform various banking operations conveniently. It integrates **account management, credit card functionalities, and loan management, enabling customers to manage their finances, accounts, and debts** effectively. The utility methods ensure consistent error handling and messaging throughout the application, enhancing user experience and system reliability. 
 
 ### Account Management
 
@@ -38,7 +30,7 @@ The main window provides a user-friendly interface to the banking management sys
 - `newCreditCard(self)` Creates a new credit card for the logged-in customer with the provided credit limit.
 - `useCreditCard(self)` Handles credit card spending, updating the card balance and user debt accordingly.
 - `getCreditCardNumbers(self)` Retrieves and populates the list of credit card numbers associated with the logged-in customer.
-- `showCardDebt(self): Displays the details of a selected credit card, including balance, debt, and limit.`
+- `showCardDebt(self)` Displays the details of a selected credit card, including balance, debt, and limit.
 
 ### Loan Management
 
