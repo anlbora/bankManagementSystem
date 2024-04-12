@@ -19,11 +19,12 @@ The program serves as a comprehensive banking management system, allowing custom
 
 ### Main Window
   The main window provides a user-friendly interface to the banking management system, allowing customers to perform various banking operations conveniently. It integrates **account management, credit card functionalities, and loan management, enabling customers to manage their finances, accounts, and debts** effectively. The utility methods ensure consistent error handling and messaging throughout the application, enhancing user experience and system reliability.
+  
 ![4](https://github.com/anlbora/bankManagementSystem/assets/100442507/a7b7a07c-2f0e-4be3-9f84-a93599dac41f)
 
 ### Account Management
 
-- `CreateBankAccount(self)` Creates a new bank account for the logged-in customer with the provided details.
+- **`CreateBankAccount(self)`** Creates a new bank account for the logged-in customer with the provided details.
 - `getAccountID(self)` Retrieves the account ID associated with the logged-in customer.
 - `getAccountName(self, account_id)` Retrieves the account name based on the provided account ID.
 - `deleteBankAccount(self)` Deletes a bank account based on the provided account name.
