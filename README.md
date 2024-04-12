@@ -33,19 +33,25 @@ The main window provides a user-friendly interface to the banking management sys
 - `updateBankAccount(self)` Updates the details of a bank account based on the provided account name.
 - `getAccountList(self)` Retrieves and populates the list of accounts associated with the logged-in customer.
 
-### Credit Card Operations:
+### Credit Card Operations
 
-- **View All Directors**: Presents a list of all registered directors.
-- **Add Directors**: Allows the addition of new director profiles.
-- **Update Directors**: Permits updates to existing director details.
-- **Delete Directors**: Enables the deletion of director profiles from the database.
+- `newCreditCard(self)` Creates a new credit card for the logged-in customer with the provided credit limit.
+- `useCreditCard(self)` Handles credit card spending, updating the card balance and user debt accordingly.
+- `getCreditCardNumbers(self)` Retrieves and populates the list of credit card numbers associated with the logged-in customer.
+- `showCardDebt(self): Displays the details of a selected credit card, including balance, debt, and limit.`
 
-### Movie Management
+### Loan Management
 
-- **View All Movies**: Displays a table containing information on all movies in the database.
-- **Add Movies**: Facilitates the addition of new movie entries.
-- **Update Movies**: Allows modifications to existing movie details.
-- **Delete Movies**: Permits the removal of movies from the database
+- `takeCredit(self)` Allows the customer to take a new credit/loan and updates the total debt and balance accordingly.
+- `payCreditLoan(self)` Handles loan repayment, updating the loan debt and total customer debt accordingly.
+- `getLoanNumbers(self)` Retrieves and populates the list of loan numbers associated with the logged-in customer.
+- `showLoanDetails(self)` Displays the details of a selected loan, including limit, debt, and take date.
+
+### Utility Methods
+
+- `messageBox(self, icon, title, message)` Displays a message box with a specified icon, title, and message.
+- `getCustomerID(self)` Retrieves the customer ID based on the current logged-in username.
+- `getChosenCustomerID(self, username):` Retrieves the customer ID based on the provided username.
 
 ## Requirements
 
@@ -56,9 +62,9 @@ The main window provides a user-friendly interface to the banking management sys
 ## Installation
 
 1. Clone the repository:
-  - git clone https://github.com/yourusername/movieLibrary.git
+  - git clone https://github.com/yourusername/bankManagementSystem.git
 2. Navigate to the project directory:
-  - cd movieLibrary
+  - cd bankManagementSystem
 3. Install the required dependencies:
   - pip install -r requirements.txt
 4. Run the application:
@@ -69,4 +75,4 @@ The main window provides a user-friendly interface to the banking management sys
 
 1. Launch the application by running `main.py`.
 2. Sign up for a new account or log in with an existing account.
-3. Use the respective buttons in the AdminPanel to manage movies, directors, and user accounts.
+3. Use the respective buttons in the Main Window to manage accounts, transfers, credit cards and credits.
