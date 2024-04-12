@@ -26,7 +26,7 @@ The main window provides a user-friendly interface to the banking management sys
 
 ### Account Management
 
-- 'CreateBankAccount(self):' Creates a new bank account for the logged-in customer with the provided details.
+- `CreateBankAccount(self):` Creates a new bank account for the logged-in customer with the provided details.
 - **Add Users**: Enables the addition of new user accounts.
 - **Update Users**: Allows modification of existing user information.
 - **Delete Users**: Facilitates the removal of user accounts after authentication.
