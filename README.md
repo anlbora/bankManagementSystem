@@ -18,7 +18,8 @@ The program serves as a comprehensive banking management system, allowing custom
 ![3](https://github.com/anlbora/bankManagementSystem/assets/100442507/2455c6e8-9268-4eab-a385-ef99756d514c)
 
 ### Main Window
-  The main window provides a user-friendly interface to the banking management system, allowing customers to perform various banking operations conveniently. It integrates **account management, credit card functionalities, and loan management, enabling customers to manage their finances, accounts, and debts** effectively. The utility methods ensure consistent error handling and messaging throughout the application, enhancing user experience and system reliability. 
+  The main window provides a user-friendly interface to the banking management system, allowing customers to perform various banking operations conveniently. It integrates **account management, credit card functionalities, and loan management, enabling customers to manage their finances, accounts, and debts** effectively. The utility methods ensure consistent error handling and messaging throughout the application, enhancing user experience and system reliability.
+![4](https://github.com/anlbora/bankManagementSystem/assets/100442507/a7b7a07c-2f0e-4be3-9f84-a93599dac41f)
 
 ### Account Management
 
@@ -28,6 +29,18 @@ The program serves as a comprehensive banking management system, allowing custom
 - `deleteBankAccount(self)` Deletes a bank account based on the provided account name.
 - `updateBankAccount(self)` Updates the details of a bank account based on the provided account name.
 - `getAccountList(self)` Retrieves and populates the list of accounts associated with the logged-in customer.
+![5](https://github.com/anlbora/bankManagementSystem/assets/100442507/e834bca2-3a57-4e5a-affd-9fee5dd5e4c4)
+![6](https://github.com/anlbora/bankManagementSystem/assets/100442507/6fea360d-733a-4c3a-9534-1f1e99845d43)
+![7](https://github.com/anlbora/bankManagementSystem/assets/100442507/cd98b90d-f38e-4de9-bd9e-8ca467fa2055)
+![8](https://github.com/anlbora/bankManagementSystem/assets/100442507/7a0a9977-5101-4c01-acc9-17130d7b3f7b)
+### Money Management
+
+- `withdrawMoney(self)` Handles the withdrawal of money from a selected bank account, updating the account balance and total customer balance accordingly.
+- `depositMoney(self)` Manages the deposit of money into a selected bank account, updating the account balance and total customer balance accordingly.
+- `transferMoney(self)` Facilitates the transfer of money between two bank accounts, updating the balances of the sender and receiver accounts, as well as the total customer balance.
+- `getCustomerList(self)` Retrieves and populates the list of customers for initiating a money transfer.
+- `getCustomerAccountList(self)` Retrieves and populates the list of accounts associated with a selected customer for initiating a money transfer.
+- `changeAccount(self)` Displays detailed information about a selected bank account, including balance, account number, and account holder details.
 
 ### Credit Card Operations
 
