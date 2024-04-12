@@ -12,6 +12,10 @@ The program serves as a comprehensive banking management system, allowing custom
 - Log In
 - Sign Up
 - Reset Password
+  
+![1](https://github.com/anlbora/bankManagementSystem/assets/100442507/05cbf667-7e36-4aa9-8008-8bad0dcd5298)
+![2](https://github.com/anlbora/bankManagementSystem/assets/100442507/07fe2271-1b32-4337-b67a-d1a859e17905)
+![3](https://github.com/anlbora/bankManagementSystem/assets/100442507/2455c6e8-9268-4eab-a385-ef99756d514c)
 
 ### Main Window
   The main window provides a user-friendly interface to the banking management system, allowing customers to perform various banking operations conveniently. It integrates **account management, credit card functionalities, and loan management, enabling customers to manage their finances, accounts, and debts** effectively. The utility methods ensure consistent error handling and messaging throughout the application, enhancing user experience and system reliability. 
