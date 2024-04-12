@@ -20,7 +20,7 @@ The program serves as a comprehensive banking management system, allowing custom
 ### Main Window
   The main window provides a user-friendly interface to the banking management system, allowing customers to perform various banking operations conveniently. It integrates **account management, credit card functionalities, and loan management, enabling customers to manage their finances, accounts, and debts** effectively. The utility methods ensure consistent error handling and messaging throughout the application, enhancing user experience and system reliability.
 ![4](https://github.com/anlbora/bankManagementSystem/assets/100442507/a7b7a07c-2f0e-4be3-9f84-a93599dac41f)
---
+
 ### Account Management
 
 - `CreateBankAccount(self)` Creates a new bank account for the logged-in customer with the provided details.
@@ -34,7 +34,7 @@ The program serves as a comprehensive banking management system, allowing custom
 ![6](https://github.com/anlbora/bankManagementSystem/assets/100442507/6fea360d-733a-4c3a-9534-1f1e99845d43)
 ![7](https://github.com/anlbora/bankManagementSystem/assets/100442507/cd98b90d-f38e-4de9-bd9e-8ca467fa2055)
 ![8](https://github.com/anlbora/bankManagementSystem/assets/100442507/7a0a9977-5101-4c01-acc9-17130d7b3f7b)
---
+
 ### Money Management
 
 - `withdrawMoney(self)` Handles the withdrawal of money from a selected bank account, updating the account balance and total customer balance accordingly.
@@ -44,6 +44,10 @@ The program serves as a comprehensive banking management system, allowing custom
 - `getCustomerAccountList(self)` Retrieves and populates the list of accounts associated with a selected customer for initiating a money transfer.
 - `changeAccount(self)` Displays detailed information about a selected bank account, including balance, account number, and account holder details.
 
+![9](https://github.com/anlbora/bankManagementSystem/assets/100442507/10260bbf-e1ff-4465-9c96-a4fa24b9dc42)
+![10](https://github.com/anlbora/bankManagementSystem/assets/100442507/6ef3dd06-131d-472a-a7b4-a382f12db25b)
+![11](https://github.com/anlbora/bankManagementSystem/assets/100442507/714e5e61-9f93-4d18-9337-52c1c57c350c)
+
 ### Credit Card Operations
 
 - `newCreditCard(self)` Creates a new credit card for the logged-in customer with the provided credit limit.
@@ -51,12 +55,21 @@ The program serves as a comprehensive banking management system, allowing custom
 - `getCreditCardNumbers(self)` Retrieves and populates the list of credit card numbers associated with the logged-in customer.
 - `showCardDebt(self)` Displays the details of a selected credit card, including balance, debt, and limit.
 
+![12](https://github.com/anlbora/bankManagementSystem/assets/100442507/534f4434-f4c1-4449-8700-fcaf309d5e57)
+![14](https://github.com/anlbora/bankManagementSystem/assets/100442507/dd965807-72bc-419c-bd16-e4f27e0ed163)
+![15](https://github.com/anlbora/bankManagementSystem/assets/100442507/1db8d898-a65a-4885-81a4-ec5fd03d8f7b)
+![16](https://github.com/anlbora/bankManagementSystem/assets/100442507/8fe6ad6a-6990-4cc6-a5df-b7f93f467f3c)
+
 ### Loan Management
 
 - `takeCredit(self)` Allows the customer to take a new credit/loan and updates the total debt and balance accordingly.
 - `payCreditLoan(self)` Handles loan repayment, updating the loan debt and total customer debt accordingly.
 - `getLoanNumbers(self)` Retrieves and populates the list of loan numbers associated with the logged-in customer.
 - `showLoanDetails(self)` Displays the details of a selected loan, including limit, debt, and take date.
+  
+![17](https://github.com/anlbora/bankManagementSystem/assets/100442507/723744bc-4022-40e5-892a-31b84c306de4)
+![18](https://github.com/anlbora/bankManagementSystem/assets/100442507/20a807d7-6829-4fa9-90c4-e618cb26a241)
+![19](https://github.com/anlbora/bankManagementSystem/assets/100442507/081b7843-d183-477f-80c1-3726e776972f)
 
 ### Utility Methods
 
