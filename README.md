@@ -29,9 +29,15 @@ The Login Page serves as the entry point to the banking management system, provi
 - **Sign Up**: Create a new account.
 - **Reset Password**: Reset your password if forgotten.
   
-![1](https://github.com/anlbora/bankManagementSystem/assets/100442507/05cbf667-7e36-4aa9-8008-8bad0dcd5298)
-![2](https://github.com/anlbora/bankManagementSystem/assets/100442507/07fe2271-1b32-4337-b67a-d1a859e17905)
-![3](https://github.com/anlbora/bankManagementSystem/assets/100442507/2455c6e8-9268-4eab-a385-ef99756d514c)
+![1](https://github.com/anlbora/bankManagementSystem/assets/100442507/aeb12b15-9ec6-47ea-989b-ec7cb3a862b2)
+
+![2](https://github.com/anlbora/bankManagementSystem/assets/100442507/5a0a1c1e-583a-42f1-a1ff-1957e0f5b903)
+
+![3](https://github.com/anlbora/bankManagementSystem/assets/100442507/603e610c-aed9-4a3b-874a-adc4e7c5541c)
+
+![4](https://github.com/anlbora/bankManagementSystem/assets/100442507/600ca28e-d0c8-486d-b154-f66dd7821ede)
+
+![5](https://github.com/anlbora/bankManagementSystem/assets/100442507/cac46b96-1b0e-4776-8456-5c191d0573ce)
 
 ### Main Window
 
@@ -42,7 +48,7 @@ The Main Window offers a user-friendly interface to perform various banking oper
 - **Credit Card Operations**: Manage credit cards and spending.
 - **Loan Management**: Take new loans and manage repayments.
 
-![4](https://github.com/anlbora/bankManagementSystem/assets/100442507/a7b7a07c-2f0e-4be3-9f84-a93599dac41f)
+![6](https://github.com/anlbora/bankManagementSystem/assets/100442507/782f7a0e-c7c3-41c3-af1d-df7717c392f9)
 
 ### Account Management
 
@@ -53,10 +59,9 @@ The Main Window offers a user-friendly interface to perform various banking oper
 - **updateBankAccount**: Update bank account details.
 - **getAccountList**: Retrieve list of accounts.
 
-![5](https://github.com/anlbora/bankManagementSystem/assets/100442507/e834bca2-3a57-4e5a-affd-9fee5dd5e4c4)
-![6](https://github.com/anlbora/bankManagementSystem/assets/100442507/6fea360d-733a-4c3a-9534-1f1e99845d43)
-![7](https://github.com/anlbora/bankManagementSystem/assets/100442507/cd98b90d-f38e-4de9-bd9e-8ca467fa2055)
-![8](https://github.com/anlbora/bankManagementSystem/assets/100442507/7a0a9977-5101-4c01-acc9-17130d7b3f7b)
+![7](https://github.com/anlbora/bankManagementSystem/assets/100442507/240faea7-f24b-42f0-955f-7581571accbf)
+
+![8](https://github.com/anlbora/bankManagementSystem/assets/100442507/1c8c636a-69db-485d-bba8-9cd6c6e24c9e)
 
 ### Money Management
 
@@ -65,11 +70,15 @@ The Main Window offers a user-friendly interface to perform various banking oper
 - **transferMoney**: Transfer money between accounts.
 - **getCustomerList**: Retrieve list of customers.
 - **getCustomerAccountList**: Retrieve customer account list.
-- **changeAccount**: Display account details.
+- **Account Details**: Display account details.
 
-![9](https://github.com/anlbora/bankManagementSystem/assets/100442507/10260bbf-e1ff-4465-9c96-a4fa24b9dc42)
-![10](https://github.com/anlbora/bankManagementSystem/assets/100442507/6ef3dd06-131d-472a-a7b4-a382f12db25b)
-![11](https://github.com/anlbora/bankManagementSystem/assets/100442507/714e5e61-9f93-4d18-9337-52c1c57c350c)
+![9](https://github.com/anlbora/bankManagementSystem/assets/100442507/167ae6d2-f7e3-4a93-bf89-5ba640b2f416)
+
+![10](https://github.com/anlbora/bankManagementSystem/assets/100442507/cbe1f247-3012-4e51-a4b4-88c123d554d1)
+
+![11](https://github.com/anlbora/bankManagementSystem/assets/100442507/fca2924a-19b9-42d0-94a8-b62513104211)
+
+![12](https://github.com/anlbora/bankManagementSystem/assets/100442507/dab55e97-8df2-4664-a518-9b6c4d49a8ff)
 
 ### Credit Card Operations
 
@@ -78,10 +87,7 @@ The Main Window offers a user-friendly interface to perform various banking oper
 - **getCreditCardNumbers**: Retrieve list of credit card numbers.
 - **showCardDebt**: Display credit card details.
 
-![12](https://github.com/anlbora/bankManagementSystem/assets/100442507/534f4434-f4c1-4449-8700-fcaf309d5e57)
-![14](https://github.com/anlbora/bankManagementSystem/assets/100442507/dd965807-72bc-419c-bd16-e4f27e0ed163)
-![15](https://github.com/anlbora/bankManagementSystem/assets/100442507/1db8d898-a65a-4885-81a4-ec5fd03d8f7b)
-![16](https://github.com/anlbora/bankManagementSystem/assets/100442507/8fe6ad6a-6990-4cc6-a5df-b7f93f467f3c)
+![14](https://github.com/anlbora/bankManagementSystem/assets/100442507/153a8e59-6c18-4268-a49d-ad8a1e50172e)
 
 ### Loan Management
 
@@ -90,9 +96,7 @@ The Main Window offers a user-friendly interface to perform various banking oper
 - **getLoanNumbers**: Retrieve list of loan numbers.
 - **showLoanDetails**: Display loan details.
 
-![17](https://github.com/anlbora/bankManagementSystem/assets/100442507/723744bc-4022-40e5-892a-31b84c306de4)
-![18](https://github.com/anlbora/bankManagementSystem/assets/100442507/20a807d7-6829-4fa9-90c4-e618cb26a241)
-![19](https://github.com/anlbora/bankManagementSystem/assets/100442507/081b7843-d183-477f-80c1-3726e776972f)
+![13](https://github.com/anlbora/bankManagementSystem/assets/100442507/0cdcde4c-0158-4cac-ba3a-e4e9937d4a35)
 
 ### Utility Methods
 
@@ -121,3 +125,5 @@ The Main Window offers a user-friendly interface to perform various banking oper
 1. Launch the application by running `main.py`.
 2. Sign up for a new account or log in with an existing account.
 2. Use the respective buttons in the Main Window to manage accounts, transfers, credit cards, and loans
+
+
