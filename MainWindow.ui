@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>1000</width>
-    <height>1000</height>
+    <height>940</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>1000</width>
-    <height>1000</height>
+    <height>940</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>1000</width>
-    <height>1000</height>
+    <height>940</height>
    </size>
   </property>
   <property name="font">
@@ -31,156 +31,13 @@
    <string>Bank System</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QGroupBox" name="groupBox">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>271</width>
-      <height>481</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Customer Transactions</string>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <widget class="QPushButton" name="btn_customerInformations">
-       <property name="text">
-        <string>Customer Informations</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_newBankAccount">
-       <property name="text">
-        <string>New Bank Account</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_deleteBankAccount">
-       <property name="text">
-        <string>Delete Bank Account</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_updateBankAccount">
-       <property name="text">
-        <string>Update Bank Account</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_withDrawMoney">
-       <property name="text">
-        <string>Withdraw Money</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_DepositMoney">
-       <property name="text">
-        <string>Deposit Money</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_moneyTransfer">
-       <property name="text">
-        <string>Money Transfer</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>510</y>
-      <width>271</width>
-      <height>241</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Credit Card Transactions</string>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_3">
-     <item>
-      <widget class="QPushButton" name="btn_newCreditCard">
-       <property name="text">
-        <string>New Credit Card</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_useCard">
-       <property name="text">
-        <string>Use Card</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_payCreditCardDept">
-       <property name="text">
-        <string>Pay Card Dept</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_showCreditCardDept">
-       <property name="text">
-        <string>Show Card Debt</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_3">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>760</y>
-      <width>271</width>
-      <height>211</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Credit Transactions</string>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_4">
-     <item>
-      <widget class="QPushButton" name="btn_newCredit">
-       <property name="text">
-        <string>Take Credit</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_payCreditLoan">
-       <property name="text">
-        <string>Pay Loan</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="btn_showLoan">
-       <property name="text">
-        <string>Show Loan</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <widget class="QGroupBox" name="groupBox_5">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>580</y>
-      <width>691</width>
-      <height>391</height>
+      <x>340</x>
+      <y>430</y>
+      <width>641</width>
+      <height>481</height>
      </rect>
     </property>
     <property name="title">
@@ -329,8 +186,14 @@
      </item>
      <item>
       <widget class="QPushButton" name="btn_changeAccount">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="text">
-        <string>Change Account</string>
+        <string>Account Details</string>
        </property>
       </widget>
      </item>
@@ -339,10 +202,10 @@
    <widget class="QGroupBox" name="groupBox_6">
     <property name="geometry">
      <rect>
-      <x>289</x>
-      <y>9</y>
-      <width>311</width>
-      <height>151</height>
+      <x>10</x>
+      <y>160</y>
+      <width>321</width>
+      <height>271</height>
      </rect>
     </property>
     <property name="title">
@@ -353,8 +216,8 @@
       <rect>
        <x>9</x>
        <y>29</y>
-       <width>289</width>
-       <height>111</height>
+       <width>301</width>
+       <height>231</height>
       </rect>
      </property>
      <layout class="QFormLayout" name="formLayout_4">
@@ -403,7 +266,28 @@
         </item>
        </widget>
       </item>
-      <item row="2" column="1">
+      <item row="3" column="0" colspan="2">
+       <widget class="QPushButton" name="btn_newBankAccount">
+        <property name="text">
+         <string>New Bank Account</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QPushButton" name="btn_deleteBankAccount">
+        <property name="text">
+         <string>Delete Bank Account</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <widget class="QPushButton" name="btn_updateBankAccount">
+        <property name="text">
+         <string>Update Bank Account</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
        <widget class="QCheckBox" name="chckBox_mainAccount">
         <property name="text">
          <string>Main Account</string>
@@ -416,10 +300,10 @@
    <widget class="QGroupBox" name="groupBox_7">
     <property name="geometry">
      <rect>
-      <x>289</x>
-      <y>169</y>
-      <width>311</width>
-      <height>221</height>
+      <x>10</x>
+      <y>430</y>
+      <width>321</width>
+      <height>241</height>
      </rect>
     </property>
     <property name="title">
@@ -430,22 +314,15 @@
       <rect>
        <x>9</x>
        <y>29</y>
-       <width>291</width>
-       <height>181</height>
+       <width>301</width>
+       <height>201</height>
       </rect>
      </property>
      <layout class="QFormLayout" name="formLayout_5">
-      <item row="2" column="0">
-       <widget class="QLabel" name="label_15">
+      <item row="0" column="0" colspan="2">
+       <widget class="QPushButton" name="btn_loadAccounts">
         <property name="text">
-         <string>Amount:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QLineEdit" name="txt_amount_Money">
-        <property name="frame">
-         <bool>false</bool>
+         <string>Load Accounts and Customers</string>
         </property>
        </widget>
       </item>
@@ -463,10 +340,31 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="0" colspan="2">
-       <widget class="QPushButton" name="btn_loadAccounts">
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_15">
         <property name="text">
-         <string>Load Accounts and Customers</string>
+         <string>Amount:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="txt_amount_Money">
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QPushButton" name="btn_withDrawMoney">
+        <property name="text">
+         <string>Withdraw Money</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QPushButton" name="btn_DepositMoney">
+        <property name="text">
+         <string>Deposit Money</string>
         </property>
        </widget>
       </item>
@@ -476,10 +374,10 @@
    <widget class="QGroupBox" name="groupBox_8">
     <property name="geometry">
      <rect>
-      <x>289</x>
-      <y>389</y>
-      <width>311</width>
-      <height>191</height>
+      <x>10</x>
+      <y>670</y>
+      <width>321</width>
+      <height>241</height>
      </rect>
     </property>
     <property name="title">
@@ -490,8 +388,8 @@
       <rect>
        <x>9</x>
        <y>30</y>
-       <width>291</width>
-       <height>151</height>
+       <width>301</width>
+       <height>201</height>
       </rect>
      </property>
      <layout class="QFormLayout" name="formLayout_6">
@@ -544,93 +442,136 @@
         </property>
        </widget>
       </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QPushButton" name="btn_moneyTransfer">
+        <property name="text">
+         <string>Money Transfer</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_9">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>330</y>
-      <width>371</width>
-      <height>251</height>
+      <x>340</x>
+      <y>10</y>
+      <width>641</width>
+      <height>221</height>
      </rect>
     </property>
     <property name="title">
      <string>Credit Card</string>
     </property>
-    <widget class="QWidget" name="formLayoutWidget_4">
+    <widget class="QWidget" name="">
      <property name="geometry">
       <rect>
-       <x>9</x>
+       <x>10</x>
        <y>29</y>
-       <width>351</width>
-       <height>211</height>
+       <width>621</width>
+       <height>185</height>
       </rect>
      </property>
-     <layout class="QFormLayout" name="formLayout_7">
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_19">
-        <property name="text">
-         <string>Card Limit:</string>
-        </property>
-       </widget>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QPushButton" name="btn_newCreditCard">
+          <property name="text">
+           <string>New Credit Card</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_useCard">
+          <property name="text">
+           <string>Use Card</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_payCreditCardDept">
+          <property name="text">
+           <string>Pay Card Dept</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_showCreditCardDept">
+          <property name="text">
+           <string>Show Card Debt</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
-      <item row="1" column="1">
-       <widget class="QLineEdit" name="txt_cardLimit_CreditCard">
-        <property name="frame">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_20">
-        <property name="text">
-         <string>Spend Money:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="1">
-       <widget class="QLineEdit" name="txt_spendMoney_CreditCard">
-        <property name="frame">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="0">
-       <widget class="QLabel" name="label_21">
-        <property name="text">
-         <string>Pay Debt:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="4" column="1">
-       <widget class="QLineEdit" name="txt_payDebt_CreditCard">
-        <property name="frame">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="label_24">
-        <property name="text">
-         <string>Card Number:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QComboBox" name="cardNumber_chose">
-        <property name="frame">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0" colspan="2">
-       <widget class="QPushButton" name="btn_loadCards">
-        <property name="text">
-         <string>Load Card Numbers</string>
-        </property>
-       </widget>
+      <item>
+       <layout class="QFormLayout" name="formLayout_7">
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>Card Limit:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="txt_cardLimit_CreditCard">
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_20">
+          <property name="text">
+           <string>Spend Money:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="txt_spendMoney_CreditCard">
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_21">
+          <property name="text">
+           <string>Pay Debt:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="txt_payDebt_CreditCard">
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_24">
+          <property name="text">
+           <string>Card Number:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="cardNumber_chose">
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QPushButton" name="btn_loadCards">
+          <property name="text">
+           <string>Load Card Numbers</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
      </layout>
     </widget>
@@ -638,73 +579,102 @@
    <widget class="QGroupBox" name="groupBox_10">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>120</y>
-      <width>371</width>
+      <x>340</x>
+      <y>230</y>
+      <width>641</width>
       <height>201</height>
      </rect>
     </property>
     <property name="title">
      <string>Credit</string>
     </property>
-    <widget class="QWidget" name="formLayoutWidget_5">
+    <widget class="QWidget" name="">
      <property name="geometry">
       <rect>
-       <x>9</x>
-       <y>29</y>
-       <width>351</width>
-       <height>161</height>
+       <x>10</x>
+       <y>26</y>
+       <width>621</width>
+       <height>151</height>
       </rect>
      </property>
-     <layout class="QFormLayout" name="formLayout_8">
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_22">
-        <property name="text">
-         <string>Credit Amount:</string>
-        </property>
-       </widget>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QPushButton" name="btn_newCredit">
+          <property name="text">
+           <string>Take Credit</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_payCreditLoan">
+          <property name="text">
+           <string>Pay Loan</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_showLoan">
+          <property name="text">
+           <string>Show Loan</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
-      <item row="1" column="1">
-       <widget class="QLineEdit" name="txt_CreditAmount_Credit">
-        <property name="frame">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QComboBox" name="creditNumber_chose">
-        <property name="frame">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="0">
-       <widget class="QLabel" name="label_23">
-        <property name="text">
-         <string>Pay Loan:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="3" column="1">
-       <widget class="QLineEdit" name="txt_payLoan_Credit">
-        <property name="frame">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLabel" name="label_4">
-        <property name="text">
-         <string>Credit Number:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0" colspan="2">
-       <widget class="QPushButton" name="btn_loadCredits">
-        <property name="text">
-         <string>Load Credit Numbers</string>
-        </property>
-       </widget>
+      <item>
+       <layout class="QFormLayout" name="formLayout_8">
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_22">
+          <property name="text">
+           <string>Credit Amount:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="txt_CreditAmount_Credit">
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="creditNumber_chose">
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_23">
+          <property name="text">
+           <string>Pay Loan:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="txt_payLoan_Credit">
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Credit Number:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QPushButton" name="btn_loadCredits">
+          <property name="text">
+           <string>Load Credit Numbers</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
      </layout>
     </widget>
@@ -712,56 +682,67 @@
    <widget class="QGroupBox" name="groupBox_4">
     <property name="geometry">
      <rect>
-      <x>609</x>
+      <x>10</x>
       <y>10</y>
-      <width>371</width>
-      <height>111</height>
+      <width>321</width>
+      <height>151</height>
      </rect>
     </property>
     <property name="title">
      <string>User</string>
     </property>
-    <widget class="QWidget" name="formLayoutWidget_6">
+    <widget class="QWidget" name="">
      <property name="geometry">
       <rect>
        <x>9</x>
        <y>30</y>
-       <width>351</width>
-       <height>71</height>
+       <width>301</width>
+       <height>111</height>
       </rect>
      </property>
-     <layout class="QFormLayout" name="formLayout">
-      <item row="0" column="0">
-       <widget class="QLabel" name="label">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Username:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>E-mail:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="txt_username_User">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="txt_email_User">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="frame">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_customerInformations">
         <property name="text">
-         <string>Username:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_2">
-        <property name="text">
-         <string>E-mail:</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="QLineEdit" name="txt_username_User">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="frame">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="1">
-       <widget class="QLineEdit" name="txt_email_User">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="frame">
-         <bool>false</bool>
+         <string>Customer Informations</string>
         </property>
        </widget>
       </item>
