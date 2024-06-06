@@ -1,14 +1,15 @@
-from PyQt5.QtWidgets import QApplication, QMessageBox, QMainWindow
+from PyQt5.QtWidgets import QApplication, QMessageBox, QMainWindow, QTableWidgetItem
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sqlite3
 from datetime import datetime
 import random
 from PyQt5 import QtCore, QtGui, QtWidgets
+import CustomerInfo
 
 
-class Ui_MainWindow(object):
-
+class Ui_MainWindow(QMainWindow):
     def __init__(self):
+
         """
         Initialize the class instance and establish a connection to the SQLite database.
         
@@ -21,7 +22,9 @@ class Ui_MainWindow(object):
         Returns:
         None
         """
-        
+
+        super(Ui_MainWindow, self).__init__()
+
         # Establish a connection to the SQLite database named 'BankDatabase.db'
         self.connect = sqlite3.connect('BankDatabase.db')
         
@@ -30,73 +33,16 @@ class Ui_MainWindow(object):
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1000, 1000)
-        MainWindow.setMinimumSize(QtCore.QSize(1000, 1000))
-        MainWindow.setMaximumSize(QtCore.QSize(1000, 1000))
+        MainWindow.resize(1000, 940)
+        MainWindow.setMinimumSize(QtCore.QSize(1000, 940))
+        MainWindow.setMaximumSize(QtCore.QSize(1000, 940))
         font = QtGui.QFont()
         font.setPointSize(12)
         MainWindow.setFont(font)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox.setGeometry(QtCore.QRect(10, 10, 271, 481))
-        self.groupBox.setObjectName("groupBox")
-        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.groupBox)
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
-        self.btn_customerInformations = QtWidgets.QPushButton(self.groupBox)
-        self.btn_customerInformations.setObjectName("btn_customerInformations")
-        self.verticalLayout_2.addWidget(self.btn_customerInformations)
-        self.btn_newBankAccount = QtWidgets.QPushButton(self.groupBox)
-        self.btn_newBankAccount.setObjectName("btn_newBankAccount")
-        self.verticalLayout_2.addWidget(self.btn_newBankAccount)
-        self.btn_deleteBankAccount = QtWidgets.QPushButton(self.groupBox)
-        self.btn_deleteBankAccount.setObjectName("btn_deleteBankAccount")
-        self.verticalLayout_2.addWidget(self.btn_deleteBankAccount)
-        self.btn_updateBankAccount = QtWidgets.QPushButton(self.groupBox)
-        self.btn_updateBankAccount.setObjectName("btn_updateBankAccount")
-        self.verticalLayout_2.addWidget(self.btn_updateBankAccount)
-        self.btn_withDrawMoney = QtWidgets.QPushButton(self.groupBox)
-        self.btn_withDrawMoney.setObjectName("btn_withDrawMoney")
-        self.verticalLayout_2.addWidget(self.btn_withDrawMoney)
-        self.btn_DepositMoney = QtWidgets.QPushButton(self.groupBox)
-        self.btn_DepositMoney.setObjectName("btn_DepositMoney")
-        self.verticalLayout_2.addWidget(self.btn_DepositMoney)
-        self.btn_moneyTransfer = QtWidgets.QPushButton(self.groupBox)
-        self.btn_moneyTransfer.setObjectName("btn_moneyTransfer")
-        self.verticalLayout_2.addWidget(self.btn_moneyTransfer)
-        self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox_2.setGeometry(QtCore.QRect(10, 510, 271, 241))
-        self.groupBox_2.setObjectName("groupBox_2")
-        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.groupBox_2)
-        self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.btn_newCreditCard = QtWidgets.QPushButton(self.groupBox_2)
-        self.btn_newCreditCard.setObjectName("btn_newCreditCard")
-        self.verticalLayout_3.addWidget(self.btn_newCreditCard)
-        self.btn_useCard = QtWidgets.QPushButton(self.groupBox_2)
-        self.btn_useCard.setObjectName("btn_useCard")
-        self.verticalLayout_3.addWidget(self.btn_useCard)
-        self.btn_payCreditCardDept = QtWidgets.QPushButton(self.groupBox_2)
-        self.btn_payCreditCardDept.setObjectName("btn_payCreditCardDept")
-        self.verticalLayout_3.addWidget(self.btn_payCreditCardDept)
-        self.btn_showCreditCardDept = QtWidgets.QPushButton(self.groupBox_2)
-        self.btn_showCreditCardDept.setObjectName("btn_showCreditCardDept")
-        self.verticalLayout_3.addWidget(self.btn_showCreditCardDept)
-        self.groupBox_3 = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox_3.setGeometry(QtCore.QRect(10, 760, 271, 211))
-        self.groupBox_3.setObjectName("groupBox_3")
-        self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.groupBox_3)
-        self.verticalLayout_4.setObjectName("verticalLayout_4")
-        self.btn_newCredit = QtWidgets.QPushButton(self.groupBox_3)
-        self.btn_newCredit.setObjectName("btn_newCredit")
-        self.verticalLayout_4.addWidget(self.btn_newCredit)
-        self.btn_payCreditLoan = QtWidgets.QPushButton(self.groupBox_3)
-        self.btn_payCreditLoan.setObjectName("btn_payCreditLoan")
-        self.verticalLayout_4.addWidget(self.btn_payCreditLoan)
-        self.btn_showLoan = QtWidgets.QPushButton(self.groupBox_3)
-        self.btn_showLoan.setObjectName("btn_showLoan")
-        self.verticalLayout_4.addWidget(self.btn_showLoan)
         self.groupBox_5 = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox_5.setGeometry(QtCore.QRect(290, 580, 691, 391))
+        self.groupBox_5.setGeometry(QtCore.QRect(340, 430, 641, 481))
         self.groupBox_5.setObjectName("groupBox_5")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.groupBox_5)
         self.verticalLayout.setObjectName("verticalLayout")
@@ -168,13 +114,18 @@ class Ui_MainWindow(object):
         self.formLayout_3.setWidget(5, QtWidgets.QFormLayout.FieldRole, self.txt_currency)
         self.verticalLayout.addLayout(self.formLayout_3)
         self.btn_changeAccount = QtWidgets.QPushButton(self.groupBox_5)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.btn_changeAccount.sizePolicy().hasHeightForWidth())
+        self.btn_changeAccount.setSizePolicy(sizePolicy)
         self.btn_changeAccount.setObjectName("btn_changeAccount")
         self.verticalLayout.addWidget(self.btn_changeAccount)
         self.groupBox_6 = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox_6.setGeometry(QtCore.QRect(289, 9, 311, 151))
+        self.groupBox_6.setGeometry(QtCore.QRect(10, 160, 321, 271))
         self.groupBox_6.setObjectName("groupBox_6")
         self.formLayoutWidget = QtWidgets.QWidget(self.groupBox_6)
-        self.formLayoutWidget.setGeometry(QtCore.QRect(9, 29, 289, 111))
+        self.formLayoutWidget.setGeometry(QtCore.QRect(9, 29, 301, 231))
         self.formLayoutWidget.setObjectName("formLayoutWidget")
         self.formLayout_4 = QtWidgets.QFormLayout(self.formLayoutWidget)
         self.formLayout_4.setContentsMargins(0, 0, 0, 0)
@@ -196,25 +147,30 @@ class Ui_MainWindow(object):
         self.currency_choice.addItem("")
         self.currency_choice.addItem("")
         self.formLayout_4.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.currency_choice)
+        self.btn_newBankAccount = QtWidgets.QPushButton(self.formLayoutWidget)
+        self.btn_newBankAccount.setObjectName("btn_newBankAccount")
+        self.formLayout_4.setWidget(3, QtWidgets.QFormLayout.SpanningRole, self.btn_newBankAccount)
+        self.btn_deleteBankAccount = QtWidgets.QPushButton(self.formLayoutWidget)
+        self.btn_deleteBankAccount.setObjectName("btn_deleteBankAccount")
+        self.formLayout_4.setWidget(4, QtWidgets.QFormLayout.SpanningRole, self.btn_deleteBankAccount)
+        self.btn_updateBankAccount = QtWidgets.QPushButton(self.formLayoutWidget)
+        self.btn_updateBankAccount.setObjectName("btn_updateBankAccount")
+        self.formLayout_4.setWidget(5, QtWidgets.QFormLayout.SpanningRole, self.btn_updateBankAccount)
         self.chckBox_mainAccount = QtWidgets.QCheckBox(self.formLayoutWidget)
         self.chckBox_mainAccount.setObjectName("chckBox_mainAccount")
-        self.formLayout_4.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.chckBox_mainAccount)
+        self.formLayout_4.setWidget(2, QtWidgets.QFormLayout.SpanningRole, self.chckBox_mainAccount)
         self.groupBox_7 = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox_7.setGeometry(QtCore.QRect(289, 169, 311, 221))
+        self.groupBox_7.setGeometry(QtCore.QRect(10, 430, 321, 241))
         self.groupBox_7.setObjectName("groupBox_7")
         self.formLayoutWidget_2 = QtWidgets.QWidget(self.groupBox_7)
-        self.formLayoutWidget_2.setGeometry(QtCore.QRect(9, 29, 291, 181))
+        self.formLayoutWidget_2.setGeometry(QtCore.QRect(9, 29, 301, 201))
         self.formLayoutWidget_2.setObjectName("formLayoutWidget_2")
         self.formLayout_5 = QtWidgets.QFormLayout(self.formLayoutWidget_2)
         self.formLayout_5.setContentsMargins(0, 0, 0, 0)
         self.formLayout_5.setObjectName("formLayout_5")
-        self.label_15 = QtWidgets.QLabel(self.formLayoutWidget_2)
-        self.label_15.setObjectName("label_15")
-        self.formLayout_5.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_15)
-        self.txt_amount_Money = QtWidgets.QLineEdit(self.formLayoutWidget_2)
-        self.txt_amount_Money.setFrame(False)
-        self.txt_amount_Money.setObjectName("txt_amount_Money")
-        self.formLayout_5.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.txt_amount_Money)
+        self.btn_loadAccounts = QtWidgets.QPushButton(self.formLayoutWidget_2)
+        self.btn_loadAccounts.setObjectName("btn_loadAccounts")
+        self.formLayout_5.setWidget(0, QtWidgets.QFormLayout.SpanningRole, self.btn_loadAccounts)
         self.label_16 = QtWidgets.QLabel(self.formLayoutWidget_2)
         self.label_16.setObjectName("label_16")
         self.formLayout_5.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_16)
@@ -222,14 +178,24 @@ class Ui_MainWindow(object):
         self.account_choice_Money.setFrame(False)
         self.account_choice_Money.setObjectName("account_choice_Money")
         self.formLayout_5.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.account_choice_Money)
-        self.btn_loadAccounts = QtWidgets.QPushButton(self.formLayoutWidget_2)
-        self.btn_loadAccounts.setObjectName("btn_loadAccounts")
-        self.formLayout_5.setWidget(0, QtWidgets.QFormLayout.SpanningRole, self.btn_loadAccounts)
+        self.label_15 = QtWidgets.QLabel(self.formLayoutWidget_2)
+        self.label_15.setObjectName("label_15")
+        self.formLayout_5.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_15)
+        self.txt_amount_Money = QtWidgets.QLineEdit(self.formLayoutWidget_2)
+        self.txt_amount_Money.setFrame(False)
+        self.txt_amount_Money.setObjectName("txt_amount_Money")
+        self.formLayout_5.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.txt_amount_Money)
+        self.btn_withDrawMoney = QtWidgets.QPushButton(self.formLayoutWidget_2)
+        self.btn_withDrawMoney.setObjectName("btn_withDrawMoney")
+        self.formLayout_5.setWidget(3, QtWidgets.QFormLayout.SpanningRole, self.btn_withDrawMoney)
+        self.btn_DepositMoney = QtWidgets.QPushButton(self.formLayoutWidget_2)
+        self.btn_DepositMoney.setObjectName("btn_DepositMoney")
+        self.formLayout_5.setWidget(4, QtWidgets.QFormLayout.SpanningRole, self.btn_DepositMoney)
         self.groupBox_8 = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox_8.setGeometry(QtCore.QRect(289, 389, 311, 191))
+        self.groupBox_8.setGeometry(QtCore.QRect(10, 670, 321, 241))
         self.groupBox_8.setObjectName("groupBox_8")
         self.formLayoutWidget_3 = QtWidgets.QWidget(self.groupBox_8)
-        self.formLayoutWidget_3.setGeometry(QtCore.QRect(9, 30, 291, 151))
+        self.formLayoutWidget_3.setGeometry(QtCore.QRect(9, 30, 301, 201))
         self.formLayoutWidget_3.setObjectName("formLayoutWidget_3")
         self.formLayout_6 = QtWidgets.QFormLayout(self.formLayoutWidget_3)
         self.formLayout_6.setContentsMargins(0, 0, 0, 0)
@@ -258,104 +224,146 @@ class Ui_MainWindow(object):
         self.btn_loadCustomers = QtWidgets.QPushButton(self.formLayoutWidget_3)
         self.btn_loadCustomers.setObjectName("btn_loadCustomers")
         self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.SpanningRole, self.btn_loadCustomers)
+        self.btn_moneyTransfer = QtWidgets.QPushButton(self.formLayoutWidget_3)
+        self.btn_moneyTransfer.setObjectName("btn_moneyTransfer")
+        self.formLayout_6.setWidget(4, QtWidgets.QFormLayout.SpanningRole, self.btn_moneyTransfer)
         self.groupBox_9 = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox_9.setGeometry(QtCore.QRect(610, 330, 371, 251))
+        self.groupBox_9.setGeometry(QtCore.QRect(340, 10, 641, 221))
         self.groupBox_9.setObjectName("groupBox_9")
-        self.formLayoutWidget_4 = QtWidgets.QWidget(self.groupBox_9)
-        self.formLayoutWidget_4.setGeometry(QtCore.QRect(9, 29, 351, 211))
-        self.formLayoutWidget_4.setObjectName("formLayoutWidget_4")
-        self.formLayout_7 = QtWidgets.QFormLayout(self.formLayoutWidget_4)
-        self.formLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.widget = QtWidgets.QWidget(self.groupBox_9)
+        self.widget.setGeometry(QtCore.QRect(10, 29, 621, 185))
+        self.widget.setObjectName("widget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.widget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.btn_newCreditCard = QtWidgets.QPushButton(self.widget)
+        self.btn_newCreditCard.setObjectName("btn_newCreditCard")
+        self.verticalLayout_5.addWidget(self.btn_newCreditCard)
+        self.btn_useCard = QtWidgets.QPushButton(self.widget)
+        self.btn_useCard.setObjectName("btn_useCard")
+        self.verticalLayout_5.addWidget(self.btn_useCard)
+        self.btn_payCreditCardDept = QtWidgets.QPushButton(self.widget)
+        self.btn_payCreditCardDept.setObjectName("btn_payCreditCardDept")
+        self.verticalLayout_5.addWidget(self.btn_payCreditCardDept)
+        self.btn_showCreditCardDept = QtWidgets.QPushButton(self.widget)
+        self.btn_showCreditCardDept.setObjectName("btn_showCreditCardDept")
+        self.verticalLayout_5.addWidget(self.btn_showCreditCardDept)
+        self.horizontalLayout.addLayout(self.verticalLayout_5)
+        self.formLayout_7 = QtWidgets.QFormLayout()
         self.formLayout_7.setObjectName("formLayout_7")
-        self.label_19 = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_19 = QtWidgets.QLabel(self.widget)
         self.label_19.setObjectName("label_19")
         self.formLayout_7.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_19)
-        self.txt_cardLimit_CreditCard = QtWidgets.QLineEdit(self.formLayoutWidget_4)
+        self.txt_cardLimit_CreditCard = QtWidgets.QLineEdit(self.widget)
         self.txt_cardLimit_CreditCard.setFrame(False)
         self.txt_cardLimit_CreditCard.setObjectName("txt_cardLimit_CreditCard")
         self.formLayout_7.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.txt_cardLimit_CreditCard)
-        self.label_20 = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_20 = QtWidgets.QLabel(self.widget)
         self.label_20.setObjectName("label_20")
         self.formLayout_7.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_20)
-        self.txt_spendMoney_CreditCard = QtWidgets.QLineEdit(self.formLayoutWidget_4)
+        self.txt_spendMoney_CreditCard = QtWidgets.QLineEdit(self.widget)
         self.txt_spendMoney_CreditCard.setFrame(False)
         self.txt_spendMoney_CreditCard.setObjectName("txt_spendMoney_CreditCard")
         self.formLayout_7.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.txt_spendMoney_CreditCard)
-        self.label_21 = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_21 = QtWidgets.QLabel(self.widget)
         self.label_21.setObjectName("label_21")
         self.formLayout_7.setWidget(4, QtWidgets.QFormLayout.LabelRole, self.label_21)
-        self.txt_payDebt_CreditCard = QtWidgets.QLineEdit(self.formLayoutWidget_4)
+        self.txt_payDebt_CreditCard = QtWidgets.QLineEdit(self.widget)
         self.txt_payDebt_CreditCard.setFrame(False)
         self.txt_payDebt_CreditCard.setObjectName("txt_payDebt_CreditCard")
         self.formLayout_7.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.txt_payDebt_CreditCard)
-        self.label_24 = QtWidgets.QLabel(self.formLayoutWidget_4)
+        self.label_24 = QtWidgets.QLabel(self.widget)
         self.label_24.setObjectName("label_24")
         self.formLayout_7.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_24)
-        self.cardNumber_chose = QtWidgets.QComboBox(self.formLayoutWidget_4)
+        self.cardNumber_chose = QtWidgets.QComboBox(self.widget)
         self.cardNumber_chose.setFrame(False)
         self.cardNumber_chose.setObjectName("cardNumber_chose")
         self.formLayout_7.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.cardNumber_chose)
-        self.btn_loadCards = QtWidgets.QPushButton(self.formLayoutWidget_4)
+        self.btn_loadCards = QtWidgets.QPushButton(self.widget)
         self.btn_loadCards.setObjectName("btn_loadCards")
         self.formLayout_7.setWidget(0, QtWidgets.QFormLayout.SpanningRole, self.btn_loadCards)
+        self.horizontalLayout.addLayout(self.formLayout_7)
         self.groupBox_10 = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox_10.setGeometry(QtCore.QRect(610, 120, 371, 201))
+        self.groupBox_10.setGeometry(QtCore.QRect(340, 230, 641, 201))
         self.groupBox_10.setObjectName("groupBox_10")
-        self.formLayoutWidget_5 = QtWidgets.QWidget(self.groupBox_10)
-        self.formLayoutWidget_5.setGeometry(QtCore.QRect(9, 29, 351, 161))
-        self.formLayoutWidget_5.setObjectName("formLayoutWidget_5")
-        self.formLayout_8 = QtWidgets.QFormLayout(self.formLayoutWidget_5)
-        self.formLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.widget1 = QtWidgets.QWidget(self.groupBox_10)
+        self.widget1.setGeometry(QtCore.QRect(10, 26, 621, 151))
+        self.widget1.setObjectName("widget1")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.widget1)
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.btn_newCredit = QtWidgets.QPushButton(self.widget1)
+        self.btn_newCredit.setObjectName("btn_newCredit")
+        self.verticalLayout_3.addWidget(self.btn_newCredit)
+        self.btn_payCreditLoan = QtWidgets.QPushButton(self.widget1)
+        self.btn_payCreditLoan.setObjectName("btn_payCreditLoan")
+        self.verticalLayout_3.addWidget(self.btn_payCreditLoan)
+        self.btn_showLoan = QtWidgets.QPushButton(self.widget1)
+        self.btn_showLoan.setObjectName("btn_showLoan")
+        self.verticalLayout_3.addWidget(self.btn_showLoan)
+        self.horizontalLayout_2.addLayout(self.verticalLayout_3)
+        self.formLayout_8 = QtWidgets.QFormLayout()
         self.formLayout_8.setObjectName("formLayout_8")
-        self.label_22 = QtWidgets.QLabel(self.formLayoutWidget_5)
+        self.label_22 = QtWidgets.QLabel(self.widget1)
         self.label_22.setObjectName("label_22")
         self.formLayout_8.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_22)
-        self.txt_CreditAmount_Credit = QtWidgets.QLineEdit(self.formLayoutWidget_5)
+        self.txt_CreditAmount_Credit = QtWidgets.QLineEdit(self.widget1)
         self.txt_CreditAmount_Credit.setFrame(False)
         self.txt_CreditAmount_Credit.setObjectName("txt_CreditAmount_Credit")
         self.formLayout_8.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.txt_CreditAmount_Credit)
-        self.creditNumber_chose = QtWidgets.QComboBox(self.formLayoutWidget_5)
+        self.creditNumber_chose = QtWidgets.QComboBox(self.widget1)
         self.creditNumber_chose.setFrame(False)
         self.creditNumber_chose.setObjectName("creditNumber_chose")
         self.formLayout_8.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.creditNumber_chose)
-        self.label_23 = QtWidgets.QLabel(self.formLayoutWidget_5)
+        self.label_23 = QtWidgets.QLabel(self.widget1)
         self.label_23.setObjectName("label_23")
         self.formLayout_8.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_23)
-        self.txt_payLoan_Credit = QtWidgets.QLineEdit(self.formLayoutWidget_5)
+        self.txt_payLoan_Credit = QtWidgets.QLineEdit(self.widget1)
         self.txt_payLoan_Credit.setFrame(False)
         self.txt_payLoan_Credit.setObjectName("txt_payLoan_Credit")
         self.formLayout_8.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.txt_payLoan_Credit)
-        self.label_4 = QtWidgets.QLabel(self.formLayoutWidget_5)
+        self.label_4 = QtWidgets.QLabel(self.widget1)
         self.label_4.setObjectName("label_4")
         self.formLayout_8.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_4)
-        self.btn_loadCredits = QtWidgets.QPushButton(self.formLayoutWidget_5)
+        self.btn_loadCredits = QtWidgets.QPushButton(self.widget1)
         self.btn_loadCredits.setObjectName("btn_loadCredits")
         self.formLayout_8.setWidget(0, QtWidgets.QFormLayout.SpanningRole, self.btn_loadCredits)
+        self.horizontalLayout_2.addLayout(self.formLayout_8)
         self.groupBox_4 = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox_4.setGeometry(QtCore.QRect(609, 10, 371, 111))
+        self.groupBox_4.setGeometry(QtCore.QRect(10, 10, 321, 151))
         self.groupBox_4.setObjectName("groupBox_4")
-        self.formLayoutWidget_6 = QtWidgets.QWidget(self.groupBox_4)
-        self.formLayoutWidget_6.setGeometry(QtCore.QRect(9, 30, 351, 71))
-        self.formLayoutWidget_6.setObjectName("formLayoutWidget_6")
-        self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget_6)
-        self.formLayout.setContentsMargins(0, 0, 0, 0)
+        self.widget2 = QtWidgets.QWidget(self.groupBox_4)
+        self.widget2.setGeometry(QtCore.QRect(9, 30, 301, 111))
+        self.widget2.setObjectName("widget2")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.widget2)
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.formLayout = QtWidgets.QFormLayout()
         self.formLayout.setObjectName("formLayout")
-        self.label = QtWidgets.QLabel(self.formLayoutWidget_6)
+        self.label = QtWidgets.QLabel(self.widget2)
         self.label.setObjectName("label")
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label)
-        self.label_2 = QtWidgets.QLabel(self.formLayoutWidget_6)
+        self.label_2 = QtWidgets.QLabel(self.widget2)
         self.label_2.setObjectName("label_2")
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_2)
-        self.txt_username_User = QtWidgets.QLineEdit(self.formLayoutWidget_6)
+        self.txt_username_User = QtWidgets.QLineEdit(self.widget2)
         self.txt_username_User.setEnabled(False)
         self.txt_username_User.setFrame(False)
         self.txt_username_User.setObjectName("txt_username_User")
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.txt_username_User)
-        self.txt_email_User = QtWidgets.QLineEdit(self.formLayoutWidget_6)
+        self.txt_email_User = QtWidgets.QLineEdit(self.widget2)
         self.txt_email_User.setEnabled(False)
         self.txt_email_User.setFrame(False)
         self.txt_email_User.setObjectName("txt_email_User")
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.txt_email_User)
+        self.verticalLayout_2.addLayout(self.formLayout)
+        self.btn_customerInformations = QtWidgets.QPushButton(self.widget2)
+        self.btn_customerInformations.setObjectName("btn_customerInformations")
+        self.verticalLayout_2.addWidget(self.btn_customerInformations)
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
@@ -399,23 +407,6 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Bank System"))
-        self.groupBox.setTitle(_translate("MainWindow", "Customer Transactions"))
-        self.btn_customerInformations.setText(_translate("MainWindow", "Customer Informations"))
-        self.btn_newBankAccount.setText(_translate("MainWindow", "New Bank Account"))
-        self.btn_deleteBankAccount.setText(_translate("MainWindow", "Delete Bank Account"))
-        self.btn_updateBankAccount.setText(_translate("MainWindow", "Update Bank Account"))
-        self.btn_withDrawMoney.setText(_translate("MainWindow", "Withdraw Money"))
-        self.btn_DepositMoney.setText(_translate("MainWindow", "Deposit Money"))
-        self.btn_moneyTransfer.setText(_translate("MainWindow", "Money Transfer"))
-        self.groupBox_2.setTitle(_translate("MainWindow", "Credit Card Transactions"))
-        self.btn_newCreditCard.setText(_translate("MainWindow", "New Credit Card"))
-        self.btn_useCard.setText(_translate("MainWindow", "Use Card"))
-        self.btn_payCreditCardDept.setText(_translate("MainWindow", "Pay Card Dept"))
-        self.btn_showCreditCardDept.setText(_translate("MainWindow", "Show Card Debt"))
-        self.groupBox_3.setTitle(_translate("MainWindow", "Credit Transactions"))
-        self.btn_newCredit.setText(_translate("MainWindow", "Take Credit"))
-        self.btn_payCreditLoan.setText(_translate("MainWindow", "Pay Loan"))
-        self.btn_showLoan.setText(_translate("MainWindow", "Show Loan"))
         self.groupBox_5.setTitle(_translate("MainWindow", "Account Details"))
         self.label_5.setText(_translate("MainWindow", "Last Activity:"))
         self.label_6.setText(_translate("MainWindow", "Opening Date:"))
@@ -425,7 +416,7 @@ class Ui_MainWindow(object):
         self.label_10.setText(_translate("MainWindow", "Balance:"))
         self.label_11.setText(_translate("MainWindow", "Account Number:"))
         self.label_12.setText(_translate("MainWindow", "Currency:"))
-        self.btn_changeAccount.setText(_translate("MainWindow", "Change Account"))
+        self.btn_changeAccount.setText(_translate("MainWindow", "Account Details"))
         self.groupBox_6.setTitle(_translate("MainWindow", "Account"))
         self.label_13.setText(_translate("MainWindow", "Account Name:"))
         self.label_14.setText(_translate("MainWindow", "Currency:"))
@@ -433,23 +424,36 @@ class Ui_MainWindow(object):
         self.currency_choice.setItemText(1, _translate("MainWindow", "CAD"))
         self.currency_choice.setItemText(2, _translate("MainWindow", "TRY"))
         self.currency_choice.setItemText(3, _translate("MainWindow", "EUR"))
+        self.btn_newBankAccount.setText(_translate("MainWindow", "New Bank Account"))
+        self.btn_deleteBankAccount.setText(_translate("MainWindow", "Delete Bank Account"))
+        self.btn_updateBankAccount.setText(_translate("MainWindow", "Update Bank Account"))
         self.chckBox_mainAccount.setText(_translate("MainWindow", "Main Account"))
         self.groupBox_7.setTitle(_translate("MainWindow", "Money Transactions"))
-        self.label_15.setText(_translate("MainWindow", "Amount:"))
-        self.label_16.setText(_translate("MainWindow", "Account:"))
         self.btn_loadAccounts.setText(_translate("MainWindow", "Load Accounts and Customers"))
+        self.label_16.setText(_translate("MainWindow", "Account:"))
+        self.label_15.setText(_translate("MainWindow", "Amount:"))
+        self.btn_withDrawMoney.setText(_translate("MainWindow", "Withdraw Money"))
+        self.btn_DepositMoney.setText(_translate("MainWindow", "Deposit Money"))
         self.groupBox_8.setTitle(_translate("MainWindow", "Transfer"))
         self.label_18.setText(_translate("MainWindow", "Customer:"))
         self.label_17.setText(_translate("MainWindow", "Account:"))
         self.label_3.setText(_translate("MainWindow", "Amount:"))
         self.btn_loadCustomers.setText(_translate("MainWindow", "Load Customers"))
+        self.btn_moneyTransfer.setText(_translate("MainWindow", "Money Transfer"))
         self.groupBox_9.setTitle(_translate("MainWindow", "Credit Card"))
+        self.btn_newCreditCard.setText(_translate("MainWindow", "New Credit Card"))
+        self.btn_useCard.setText(_translate("MainWindow", "Use Card"))
+        self.btn_payCreditCardDept.setText(_translate("MainWindow", "Pay Card Dept"))
+        self.btn_showCreditCardDept.setText(_translate("MainWindow", "Show Card Debt"))
         self.label_19.setText(_translate("MainWindow", "Card Limit:"))
         self.label_20.setText(_translate("MainWindow", "Spend Money:"))
         self.label_21.setText(_translate("MainWindow", "Pay Debt:"))
         self.label_24.setText(_translate("MainWindow", "Card Number:"))
         self.btn_loadCards.setText(_translate("MainWindow", "Load Card Numbers"))
         self.groupBox_10.setTitle(_translate("MainWindow", "Credit"))
+        self.btn_newCredit.setText(_translate("MainWindow", "Take Credit"))
+        self.btn_payCreditLoan.setText(_translate("MainWindow", "Pay Loan"))
+        self.btn_showLoan.setText(_translate("MainWindow", "Show Loan"))
         self.label_22.setText(_translate("MainWindow", "Credit Amount:"))
         self.label_23.setText(_translate("MainWindow", "Pay Loan:"))
         self.label_4.setText(_translate("MainWindow", "Credit Number:"))
@@ -457,6 +461,7 @@ class Ui_MainWindow(object):
         self.groupBox_4.setTitle(_translate("MainWindow", "User"))
         self.label.setText(_translate("MainWindow", "Username:"))
         self.label_2.setText(_translate("MainWindow", "E-mail:"))
+        self.btn_customerInformations.setText(_translate("MainWindow", "Customer Informations"))
 
     def showCustomerInfo(self):
         """
@@ -464,7 +469,7 @@ class Ui_MainWindow(object):
         
         This method retrieves the current customer ID using the getCustomerID method,
         fetches the customer data from the Customers table in the database based on the retrieved customer ID,
-        and displays the customer information in a formatted message box.
+        and displays the customer information in a new form.
 
         Parameters:
         - self: The instance of the class containing the cursor for database operations.
@@ -484,35 +489,24 @@ class Ui_MainWindow(object):
 
             # Check if customer data exists
             if customer_data:
-                # Extract customer data into individual variables
-                name = customer_data[1]
-                surname = customer_data[2]
-                age = customer_data[3]
-                username = customer_data[4]
-                password = customer_data[5]
-                email = customer_data[6]
-                account_quantity = customer_data[7]
-                join_date = customer_data[8]
-                card_quantity = customer_data[9]
-                balance = customer_data[10]
-                debt = customer_data[11]
+                # Extract customer data into a list of tuples
+                data = [
+                    ("Name", f"{customer_data[1]}"),
+                    ("Surname", f"{customer_data[2]}"),
+                    ("Age", customer_data[3]),
+                    ("Username", customer_data[4]),
+                    ("Password", customer_data[5]),
+                    ("Email", customer_data[6]),
+                    ("Number of Accounts", customer_data[7]),
+                    ("Join Date", customer_data[8]),
+                    ("Number of Credit Cards", customer_data[9]),
+                    ("Balance", f"{customer_data[10]} $"),
+                    ("Debt", f"{customer_data[11]} $")
+                ]
 
-                # Format the customer information message
-                msg = f"""
-                    Name Surname: {name} {surname}\n
-                    Age: {age}\n
-                    Username: {username}\n
-                    Password: {password}\n
-                    Email: {email}\n
-                    Number of Accounts: {account_quantity}\n
-                    Join Date: {join_date}\n
-                    Number of Credit Cards: {card_quantity}\n
-                    Balance: {balance} $\n
-                    Debt: {debt} $\n
-                """
-                
-                # Display the customer information in a message box
-                self.messageBox(QMessageBox.Information, "Customer Information", msg)
+                # Create and show the CustomerInfo form
+                self.customerInfoWindow = CustomerInfo.Ui_customerInfo(data)
+                self.customerInfoWindow.show()
             else:
                 # Display an error message if customer data is not found
                 self.messageBox(QMessageBox.Warning, "Error", "Customer not found.")
@@ -520,6 +514,7 @@ class Ui_MainWindow(object):
         except Exception as e:
             # Display an error message for any unexpected exceptions
             self.messageBox(QMessageBox.Critical, "Error", f"An error occurred: {str(e)}")
+
 
     def getCustomerID(self):
         """
@@ -1751,50 +1746,5 @@ class Ui_MainWindow(object):
         except Exception as e:
             # Handle any exceptions and display a warning message
             self.messageBox(QMessageBox.Warning, "Error", f"An error occurred: {str(e)}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
